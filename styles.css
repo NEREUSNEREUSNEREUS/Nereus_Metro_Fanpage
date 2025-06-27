@@ -1,0 +1,22 @@
+
+
+body{
+    max-width: 1600px;
+}
+
+.title{
+    background-color: black;
+    font-family: "Royhand";
+    text-align: left;
+
+}
+  position: absolute;
+  max-width: 400px;
+  font-family: "Royhand";
+  background-color:rgba(1, 1, 1, 0.5);
+  padding: 2%;
+  color: white;
+  text-align: left;
+  font-size: 18px;
+  top: 55%;
+  left: 0%;
