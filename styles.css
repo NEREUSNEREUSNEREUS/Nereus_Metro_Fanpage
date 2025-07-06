@@ -5,6 +5,9 @@
 
   font-family: "Inter";
   src: url(Fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+
+  font-family: "Royhand";
+  src: url(Fonts/Roy_Hand/roy-hand.ttf);
 }
 
 body {
@@ -19,8 +22,8 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 8px;
+    grid-template-rows: repeat(10, 120px, 1fr);
+    gap: 0;
 }
 
 /* TITLE GRID */
@@ -40,11 +43,11 @@ body {
   grid-column: span 3 / span 3;
   grid-column-start: 3;
   background-color: rgba(5, 5, 5, 0.5);
+  text-align: center;
 }
 
 .navbar ul li {
   display: inline;
-  text-align: center;
 }
 
 .navbar a {
@@ -68,14 +71,10 @@ body {
   background-color: rgba(5, 5, 5, 0.5);
   position: relative;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
 }
 
 .content-1 img {
-  max-width: 80%;
-  min-width: auto-fit;
-  border-radius: 20px;
+  width: 100%;
 }
 
 .content-1-text {
@@ -98,14 +97,10 @@ body {
   background-color: rgba(5, 5, 5, 0.5);
   position: relative;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
 }
 
 .content-2 img {
-  max-width: 80%;
-  min-width: auto-fit;
-  border-radius: 20px;
+  width: 100%;
 }
 
 .content-2-text {
@@ -128,14 +123,10 @@ body {
   background-color: rgba(5, 5, 5, 0.5);
   position: relative;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .content-3 img {
-  max-width: 80%;
-  min-width: auto-fit;
-  border-radius: 20px;
+  width: 100%;
 }
 
 .content-3-text {
@@ -156,6 +147,26 @@ body {
   grid-column: span 5 / span 5;
   grid-row-start: 5;
   background-color: rgba(5, 5, 5, 0.5);
+  text-align: center;
+}
+
+.contacts ul li {
+  display: inline;
+  text-align: center;
+}
+
+.contacts a {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  border-radius: 2px;
+}
+
+.contacts a:hover {
+  background-color: rgba(5, 5, 5, 0.5);;
 }
 
 /* INFO GRID */
@@ -163,4 +174,15 @@ body {
   grid-column: span 5 / span 5;
   grid-row-start: 6;
   background-color: rgba(5, 5, 5, 0.5);
+}
+
+.info-text {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;  
+  color: white;
 }
