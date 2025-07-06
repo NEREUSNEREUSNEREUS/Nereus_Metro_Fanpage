@@ -1,13 +1,22 @@
 /* FONTS */
 @font-face {
-  font-family: "Open-sans";
-  src: url(Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-
-  font-family: "Inter";
-  src: url(Fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
-
   font-family: "Royhand";
   src: url(Fonts/Roy_Hand/roy-hand.ttf);
+}
+
+@font-face {
+  font-family: "DINPro-Light";
+  src: url(Fonts/DIN_Pro/DINPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "DINPro-Bold";
+  src: url(Fonts/DIN_Pro/DINPro-Bold.ttf);
+}
+
+@font-face{
+  font-family: "DINPro-Black";
+  src: url(Fonts/DIN_Pro/DINPro-Black.ttf);
 }
 
 body {
@@ -15,7 +24,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   padding: 0;
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(30 , 30, 30);
 }
 
 /* GRID LAYOUT */
@@ -28,22 +37,26 @@ body {
 
 /* TITLE GRID */
 .title {
-    grid-column: span 2 / span 2;
+    grid-column: span 1 / span 1;
     background-color: rgba(5, 5, 5, 0.5);
+    text-align: center;
+    position: relative;
 }
 
 .title img {
-  max-width: 200px;
+  max-width: 100px;
   display: block;
-  padding: 25px;
+  padding: 20px;
+  position: relative;
+  left: 50%;
 }
 
 /* NAVBAR GRID */
 .navbar {
-  grid-column: span 3 / span 3;
-  grid-column-start: 3;
+  grid-column: span 4 / span 4;
+  grid-column-start: 2;
   background-color: rgba(5, 5, 5, 0.5);
-  text-align: center;
+  position: relative;
 }
 
 .navbar ul li {
@@ -51,17 +64,19 @@ body {
 }
 
 .navbar a {
-  font-family: "Inter", sans-serif;
-  font-size: 25px;
-  font-weight: 800;
+  font-family: "DINPro-Bold", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
   text-decoration: none;
   color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 2px;
+  position: relative;
+  left: 50%;
 }
 
 .navbar a:hover {
-  background-color: rgba(5, 5, 5, 0.5);;
+  background-color: rgb(100, 0, 0, 0.75);
 }
 
 /* CONTENT-1 GRID */
@@ -156,7 +171,7 @@ body {
 }
 
 .contacts a {
-  font-family: "Open-sans", sans-serif;
+  font-family: "DINPro-Light", sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -177,9 +192,8 @@ body {
 }
 
 .info-text {
-  font-family: "Open-sans", sans-serif;
+  font-family: "DINPro-Light", sans-serif;
   text-align: center;
-  font-weight: 400;
   font-size: 16px;
   padding: 20px;
   margin-left: 10%;
