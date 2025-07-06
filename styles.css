@@ -4,11 +4,16 @@
   src: url(Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-/* GRID LAYOUT */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* GRID LAYOUT 1 */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(5fr, 1fr);
+    grid-template-rows: repeat(10fr, 1fr);
     gap: 8px;
 }
 
@@ -21,4 +26,91 @@
     grid-column: span 3 / span 3;
     grid-column-start: 3;
     background-color: rgba(5, 5, 5, 0.5);
+}
+
+.content-1 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+.content-2 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 3;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+.content-3 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 3;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+.contacts {
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+.info {
+    grid-column: span 5 / span 5;
+    grid-row-start: 6;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+/* GRID LAYOUT 2 */
+
+.grid-container2 {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 8px; 
+  grid-template-areas: 
+    "title title navbar navbar navbar"
+    "content-1 content-1 content-1 content-1 content-1"
+    "content-2 content-2 content-2 content-2 content-2"
+    "content-3 content-3 content-3 content-3 content-3"
+    "contacts contacts contacts contacts contacts"
+    "info info info info info"; 
+}
+.title {
+  grid-area: title;
+  background-color: rgba(5, 5, 5, 0.5);
+  padding: 20px;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: rgba(5, 5, 5, 0.5);
+  padding: 20px;
+}
+
+.content-1 {
+  grid-area: content-1;
+  background-color: rgba(5, 5, 5, 0.5);
+  padding: 20px;
+}
+
+.content-2 {
+  grid-area: content-2;
+  background-color: rgba(5, 5, 5, 0.5);
+  padding: 20px;
+}
+
+.content-3 {
+  grid-area: content-3;
+  background-color: rgba(5, 5, 5, 0.5);
+  padding: 20px;
+}
+
+.contacts {
+  grid-area: contacts;
+  background-color: rgba(5, 5, 5, 0.5);
+  padding: 20px;
+}
+
+.info {
+  grid-area: info;
+  background-color: rgba(5, 5, 5, 0.5);
+  padding: 20px;
 }
