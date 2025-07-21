@@ -27,7 +27,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(20, 30, 30);
+  background-color: rgb(10, 10, 10);
 }
 
 /* GRID LAYOUT */
@@ -42,9 +42,9 @@ body {
 /* TITLE GRID */
 .title {
   grid-column: span 1 / span 1;
-  background-color: rgba(5, 5, 5, 0.5);
   text-align: center;
   position: relative;
+  background-color: rgba(5, 5, 5, 1);
 }
 
 .title img {
@@ -59,8 +59,8 @@ body {
 .navbar {
   grid-column: span 4 / span 4;
   grid-column-start: 2;
-  background-color: rgba(5, 5, 5, 0.5);
   position: relative;
+  background-color: rgba(5, 5, 5, 1);
 }
 
 .navbar ul li {
@@ -80,14 +80,13 @@ body {
 }
 
 .navbar a:hover {
-  background-color: rgb(100, 0, 0, 0.75);
+  background-color: rgba(100, 100, 100, 0.5);
 }
 
 /* BOOKS GRID */
 .book {
   grid-column: span 2 / span 2;
   grid-row-start: 2;
-  background-color: rgba(5, 5, 5, 0.5);
 
 }
 
@@ -102,20 +101,23 @@ body {
   grid-column: span 3 / span 3;
   grid-column-start: 3;
   grid-row-start: 2;
-  background-color: rgba(5, 5, 5, 0.5);
   color: white;
   font-size: 25px;
   font-family: "DINPro-Light",sans-serif;
-  padding: 18px;
+  max-width: 800px;
+  padding: 20px;
+  top: 25%;
+  position: relative;
 }
 
 /* CONTENT-1 GRID */
 .content-1 {
   grid-column: span 5 / span 5;
   grid-row-start: 3;
-  background-color: rgba(5, 5, 5, 0.5);
   position: relative;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content-1 img {
@@ -139,9 +141,10 @@ body {
 .content-2 {
   grid-column: span 5 / span 5;
   grid-row-start: 4;
-  background-color: rgba(5, 5, 5, 0.5);
   position: relative;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content-2 img {
@@ -165,9 +168,10 @@ body {
 .content-3 {
   grid-column: span 5 / span 5;
   grid-row-start: 5;
-  background-color: rgba(5, 5, 5, 0.5);
   position: relative;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content-3 img {
@@ -191,7 +195,7 @@ body {
 .contacts {
   grid-column: span 5 / span 5;
   grid-row-start: 6;
-  background-color: rgba(5, 5, 5, 0.5);
+  background-color: rgba(5, 5, 5, 1);
   text-align: center;
 }
 
@@ -210,7 +214,7 @@ body {
 }
 
 .contacts a:hover {
-  background-color: rgba(5, 5, 5, 0.5);;
+  background-color: rgba(100, 100, 100, 0.5);;
 }
 
 .contacts img {
@@ -221,7 +225,7 @@ body {
 .info {
   grid-column: span 5 / span 5;
   grid-row-start: 7;
-  background-color: rgba(5, 5, 5, 0.5);
+  background-color: rgba(5, 5, 5, 1);
 }
 
 .info-text {
