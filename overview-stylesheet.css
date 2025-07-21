@@ -42,6 +42,12 @@ p2 {
   font-family: "RoyHand", sans-serif;
 }
 
+h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "DINPro-Bold", sans-serif;
+}
+
 /* GRID LAYOUT */
 .grid-container {
   display: grid;
@@ -95,100 +101,34 @@ p2 {
   background-color: rgba(100, 100, 100, 0.5);
 }
 
-/* BOOKS GRID */
-.book {
-  grid-column: span 2 / span 2;
-  grid-row-start: 2;
-
+.div1 {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    padding: 20px;
 }
 
-.book img {
-  max-width: 200px;
-  position: relative;
-  padding: 20px;
-  left: 25%;
+.div2 {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    padding: 20px;
 }
 
-.book-description {
-  grid-column: span 3 / span 3;
-  grid-column-start: 3;
-  grid-row-start: 2;
-  max-width: 800px;
-  padding: 20px;
-  top: 25%;
-  position: relative;
+.div3 {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    padding: 20px;
 }
 
-/* CONTENT-1 GRID */
-.content-1 {
-  grid-column: span 5 / span 5;
-  grid-row-start: 3;
-  position: relative;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.div4 {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    padding: 20px;
 }
 
-.content-1 img {
-  width: 100%;
-}
-
-.content-1-text {
-  position: absolute;
-  max-width: 400px;
-  background-color:rgba(1, 1, 1, 0.5);
-  padding: 2%;
-  text-align: left;
-  top: 55%;
-  left: 0%;
-}
-
-/* CONTENT-1 GRID */
-.content-2 {
-  grid-column: span 5 / span 5;
-  grid-row-start: 4;
-  position: relative;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.content-2 img {
-  width: 100%;
-}
-
-.content-2-text {
-  position: absolute;
-  max-width: 400px;
-  background-color:rgba(1, 1, 1, 0.5);
-  padding: 2%;
-  text-align: left;
-  top: 55%;
-  left: 0%;
-}
-
-/* CONTENT-1 GRID */
-.content-3 {
-  grid-column: span 5 / span 5;
-  grid-row-start: 5;
-  position: relative;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.content-3 img {
-  width: 100%;
-}
-
-.content-3-text {
-  position: absolute;
-  max-width: 400px;
-  background-color:rgba(1, 1, 1, 0.5);
-  padding: 2%;
-  text-align: left;
-  top: 55%;
-  left: 0%;
+.div5 {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    padding: 20px;
 }
 
 /* CONTACTS GRID */
