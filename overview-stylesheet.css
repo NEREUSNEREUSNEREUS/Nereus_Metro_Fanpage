@@ -1,0 +1,239 @@
+/* FONTS */
+@font-face {
+  font-family: "Royhand";
+  src: url(Fonts/Roy_Hand/roy-hand.ttf);
+}
+
+@font-face {
+  font-family: "DINPro-Light";
+  src: url(Fonts/DIN_Pro/DINPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "DINPro-Bold";
+  src: url(Fonts/DIN_Pro/DINPro-Bold.ttf);
+}
+
+@font-face{
+  font-family: "DINPro-Black";
+  src: url(Fonts/DIN_Pro/DINPro-Black.ttf);
+}
+
+@font-face{
+  font-family: "County";
+  src: url(Fonts/County/County.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 8, 8);
+}
+
+p {
+  color: white;
+  font-size: 25px;
+  font-family: "DINPro-Light", sans-serif;
+}
+
+p2 {
+  color: white;
+  font-size: 18px;
+  font-family: "RoyHand", sans-serif;
+}
+
+/* GRID LAYOUT */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(11, 100px,);
+  gap: 0;
+  background-color: rgba(80, 80, 80, 0.5);
+}
+
+/* TITLE GRID */
+.title {
+  grid-column: span 1 / span 1;
+  text-align: center;
+  position: relative;
+  background-color: rgba(5, 5, 5, 1);
+}
+
+.title img {
+  max-width: 100px;
+  display: block;
+  padding: 20px;
+  position: relative;
+  left: 50%;
+}
+
+/* NAVBAR GRID */
+.navbar {
+  grid-column: span 4 / span 4;
+  grid-column-start: 2;
+  position: relative;
+  background-color: rgba(5, 5, 5, 1);
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar a {
+  font-family: "DINPro-Bold", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border-radius: 2px;
+  position: relative;
+  left: 50%;
+}
+
+.navbar a:hover {
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+/* BOOKS GRID */
+.book {
+  grid-column: span 2 / span 2;
+  grid-row-start: 2;
+
+}
+
+.book img {
+  max-width: 200px;
+  position: relative;
+  padding: 20px;
+  left: 25%;
+}
+
+.book-description {
+  grid-column: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  max-width: 800px;
+  padding: 20px;
+  top: 25%;
+  position: relative;
+}
+
+/* CONTENT-1 GRID */
+.content-1 {
+  grid-column: span 5 / span 5;
+  grid-row-start: 3;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-1 img {
+  width: 100%;
+}
+
+.content-1-text {
+  position: absolute;
+  max-width: 400px;
+  background-color:rgba(1, 1, 1, 0.5);
+  padding: 2%;
+  text-align: left;
+  top: 55%;
+  left: 0%;
+}
+
+/* CONTENT-1 GRID */
+.content-2 {
+  grid-column: span 5 / span 5;
+  grid-row-start: 4;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-2 img {
+  width: 100%;
+}
+
+.content-2-text {
+  position: absolute;
+  max-width: 400px;
+  background-color:rgba(1, 1, 1, 0.5);
+  padding: 2%;
+  text-align: left;
+  top: 55%;
+  left: 0%;
+}
+
+/* CONTENT-1 GRID */
+.content-3 {
+  grid-column: span 5 / span 5;
+  grid-row-start: 5;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-3 img {
+  width: 100%;
+}
+
+.content-3-text {
+  position: absolute;
+  max-width: 400px;
+  background-color:rgba(1, 1, 1, 0.5);
+  padding: 2%;
+  text-align: left;
+  top: 55%;
+  left: 0%;
+}
+
+/* CONTACTS GRID */
+.contacts {
+  grid-column: span 5 / span 5;
+  grid-row-start: 6;
+  background-color: rgba(5, 5, 5, 1);
+  text-align: center;
+}
+
+.contacts ul li {
+  display: inline;
+  text-align: center;
+}
+
+.contacts a {
+  font-family: "DINPro-Light", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.contacts a:hover {
+  background-color: rgba(100, 100, 100, 0.5);;
+}
+
+.contacts img {
+  max-width: 30px;
+}
+
+/* INFO GRID */
+.info {
+  grid-column: span 5 / span 5;
+  grid-row-start: 7;
+  background-color: rgba(5, 5, 5, 1);
+}
+
+.info-text {
+  font-family: "DINPro-Light", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;  
+  color: white;
+}
