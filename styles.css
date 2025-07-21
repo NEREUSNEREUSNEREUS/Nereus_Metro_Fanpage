@@ -26,26 +26,25 @@
 
 body {
   margin: 0;
-  margin-left: 10%;
-  margin-right: 10%;
   padding: 0;
-  background-color: rgb(30 , 30, 30);
+  background-color: rgb(20, 30, 30);
 }
 
 /* GRID LAYOUT */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(11, 100px,);
-    gap: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(11, 100px,);
+  gap: 0;
+  background-color: rgba(80, 80, 80, 0.5);
 }
 
 /* TITLE GRID */
 .title {
-    grid-column: span 1 / span 1;
-    background-color: rgba(5, 5, 5, 0.5);
-    text-align: center;
-    position: relative;
+  grid-column: span 1 / span 1;
+  background-color: rgba(5, 5, 5, 0.5);
+  text-align: center;
+  position: relative;
 }
 
 .title img {
@@ -84,9 +83,30 @@ body {
   background-color: rgb(100, 0, 0, 0.75);
 }
 
-.books {
-  grid-column: span 5 / span 5;
+/* BOOKS GRID */
+.book {
+  grid-column: span 2 / span 2;
   grid-row-start: 2;
+  background-color: rgba(5, 5, 5, 0.5);
+
+}
+
+.book img {
+  max-width: 200px;
+  position: relative;
+  padding: 20px;
+  left: 25%;
+}
+
+.book-description {
+  grid-column: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  background-color: rgba(5, 5, 5, 0.5);
+  color: white;
+  font-size: 25px;
+  font-family: "DINPro-Light",sans-serif;
+  padding: 18px;
 }
 
 /* CONTENT-1 GRID */
@@ -169,7 +189,7 @@ body {
 
 /* CONTACTS GRID */
 .contacts {
-  grid-column: span 5 / span 5;
+  grid-column: span 2 / span 2;
   grid-row-start: 6;
   background-color: rgba(5, 5, 5, 0.5);
   text-align: center;
@@ -182,16 +202,26 @@ body {
 
 .contacts a {
   font-family: "DINPro-Light", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
   text-decoration: none;
   color: white;
-  padding: 25px;
+  padding: 20px;
   border-radius: 2px;
 }
 
 .contacts a:hover {
   background-color: rgba(5, 5, 5, 0.5);;
+}
+
+.contacts img {
+  max-width: 30px;
+}
+
+/* OFFICIAL METRO LINKS */
+.official-metro {
+  grid-column: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 6;
 }
 
 /* INFO GRID */
